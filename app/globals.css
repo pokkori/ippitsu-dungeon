@@ -77,3 +77,36 @@ html, body {
 .touch-none {
   touch-action: none;
 }
+
+/* === Pro Dark Theme Base Animations === */
+
+@keyframes btn-bounce {
+  0% { transform: scale(0.95); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes skeleton {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes scoreFloat {
+  0% { opacity: 1; transform: translateY(0) scale(1.2); }
+  100% { opacity: 0; transform: translateY(-60px) scale(0.8); }
+}
+
+.tabular-nums { font-variant-numeric: tabular-nums; }
+
+@keyframes orbFloat {
+  0%,100%{transform:scale(1);opacity:0.55}
+  25%{transform:translate(16px,-22px) scale(1.07);opacity:0.85}
+  50%{transform:translate(-10px,-36px) scale(0.93);opacity:0.65}
+  75%{transform:translate(20px,-14px) scale(1.03);opacity:0.80}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important}}

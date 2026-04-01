@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import OrbBackground from '@/components/OrbBackground';
 
 export const metadata: Metadata = {
   title: '一筆書きダンジョン - One Stroke Dungeon',
@@ -25,9 +26,12 @@ export default function RootLayout({
         <meta name="theme-color" content="#0D1117" />
       </head>
       <body className="min-h-dvh">
-        <main className="mx-auto max-w-md min-h-dvh flex flex-col">
-          {children}
-        </main>
+        <OrbBackground />
+        <div style={{ position: "relative", zIndex: 1 }}>
+          <main className="mx-auto max-w-md min-h-dvh flex flex-col">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
