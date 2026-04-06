@@ -239,7 +239,7 @@ function PlayContent() {
           className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors text-sm"
           disabled={state.path.length <= 1}
         >
-          ↩️ 戻す
+          戻す
         </button>
         <EquipmentList itemsCollected={state.itemsCollected} />
       </div>
