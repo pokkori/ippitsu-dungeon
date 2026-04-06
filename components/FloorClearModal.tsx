@@ -32,13 +32,16 @@ export default function FloorClearModal({
         </div>
         <div className="mt-4 flex justify-center gap-2">
           {Array.from({ length: 6 }).map((_, i) => (
-            <span
+            <svg
               key={i}
-              className="text-2xl animate-pulse"
+              className="w-6 h-6 text-yellow-300 animate-pulse"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
-              ✨
-            </span>
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/>
+            </svg>
           ))}
         </div>
       </div>

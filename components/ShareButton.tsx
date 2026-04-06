@@ -29,7 +29,7 @@ export default function ShareButton({ text }: ShareButtonProps) {
         onClick={handleShare}
         className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
       >
-        📤 シェア
+        <svg className="w-4 h-4 mr-1 inline-block" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2v10M6 6l4-4 4 4M4 14v2a2 2 0 002 2h8a2 2 0 002-2v-2" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg> シェア
       </button>
       <button
         onClick={handleTwitter}
